@@ -1,0 +1,234 @@
+Build **FileFit Pro**, a complete production-ready **Next.js App Router + JavaScript + Tailwind CSS** website in one repository.
+
+**IMPORTANT:** Build the working project directly. Do not explain, ask questions, create unnecessary documentation, or add unnecessary features. Keep the codebase lightweight to minimize AI usage.
+
+## BRAND
+
+Name: FileFit Pro
+Owner: Muhammad Anas Nadeem
+Email: [filefitpro.official@gmail.com](mailto:filefitpro.official@gmail.com)
+Development URL: https://filefitpro.vercel.app
+Use `NEXT_PUBLIC_SITE_URL` for all production URLs/canonicals.
+
+## DESIGN
+
+Professional premium SaaS utility website.
+Dark slate background `#080c14`, cyan `#06b6d4` accents, glassmorphism cards, subtle glow, Lucide icons, clean typography, excellent spacing, strong visual hierarchy, responsive desktop/mobile design, accessible contrast and keyboard navigation.
+Avoid excessive animations and visual clutter.
+
+## CORE REQUIREMENT
+
+No backend, database, authentication, AI API or paid API.
+**All file processing must happen 100% locally in the browser. Never upload/store user files on FileFit Pro servers.**
+
+## TOOLS
+
+### `/tools/image-compressor`
+
+Build a fully working JPG/JPEG/PNG/WebP compressor:
+
+* drag/drop + file picker
+* target KB input
+* presets: `<20KB`, `<50KB`, `<100KB`
+* Canvas-based quality + dimension optimization
+* iterative/binary-search compression
+* output at/below target where technically possible
+* original/output size, dimensions and compression percentage
+* preview + download
+* clear error handling
+* do not falsely promise mathematically exact KB
+
+### `/tools/passport-photo-resizer`
+
+* 35×45 mm preset
+* 300 DPI default
+* calculate/show pixel dimensions
+* crop/fit while preserving aspect ratio
+* preview/download
+* optional compression
+
+### `/tools/cnic-merger`
+
+* front + back image upload
+* A4 portrait/landscape
+* side-by-side or top/bottom layout
+* adjustable margins/spacing
+* preview
+* export PNG/JPEG
+* client-side PDF using jsPDF
+* no server upload
+
+### `/tools/image-metadata-remover`
+
+Canvas re-export an image to remove original EXIF metadata where supported.
+Show original/output information and download.
+
+Every upload tool must visibly show:
+**🔒 Files are processed locally in your browser and are not uploaded to FileFit Pro servers.**
+
+## PAGES
+
+Create:
+`/`
+`/tools`
+`/tools/image-compressor`
+`/tools/passport-photo-resizer`
+`/tools/cnic-merger`
+`/tools/image-metadata-remover`
+`/blog`
+`/blog/[slug]`
+`/about`
+`/contact`
+`/privacy-policy`
+`/terms`
+`/disclaimer`
+`/methodology`
+
+## HOMEPAGE
+
+Create a useful, SEO-focused homepage, not just a tool.
+
+H1:
+**Free Image & File Tools — Processed Privately in Your Browser**
+
+Include:
+
+* concise original introduction
+* tool cards
+* privacy advantage
+* how it works
+* supported formats
+* FAQ
+* useful guides
+* related tools
+* clear navigation
+* strong but non-spammy calls to action
+
+## SEO — IMPLEMENT NOW
+
+Every important page needs:
+
+* unique title + meta description
+* canonical URL
+* `metadataBase`
+* Open Graph
+* Twitter metadata
+* semantic HTML
+* correct H1/H2 hierarchy
+* breadcrumbs
+* internal links
+* clean URLs
+* appropriate index/noindex
+* valid JSON-LD
+
+Create:
+`src/app/sitemap.js`
+`src/app/robots.js`
+
+Use:
+
+* WebSite schema
+* Organization schema
+* BreadcrumbList schema
+* WebApplication/SoftwareApplication schema only where accurate
+* BlogPosting schema for articles
+
+Never create fake ratings, reviews, statistics or schema.
+No keyword stuffing or duplicate/programmatic SEO pages.
+Sitemap must contain only canonical indexable URLs.
+
+## BLOG
+
+Create a lightweight data-driven blog with **5 short but useful original articles**:
+
+1. How to Compress an Image Under 20KB
+2. How to Compress JPG to 50KB
+3. How to Resize a Photo to 35×45 mm
+4. How to Put Front and Back ID Images on One A4 Page
+5. Why Browser-Based File Processing Is More Private
+
+Each article needs useful headings, practical information, links to the relevant FileFit Pro tool, related article links, canonical metadata and BlogPosting JSON-LD.
+
+Keep articles concise; make adding future articles manually easy.
+
+## TRUST + ADSENSE READINESS
+
+Create concise, genuine:
+
+* About
+* Contact
+* Privacy Policy
+* Terms
+* Disclaimer
+* Methodology
+
+Privacy Policy must accurately explain local browser processing, no FileFit Pro server upload/storage, cookies/analytics only if actually used, and third-party advertising when enabled.
+
+Include this disclosure:
+**“We do not upload files to servers. We use third-party vendors, including Google AdSense, which may use cookies to serve ads based on user visits.”**
+
+Do not claim zero data collection if future analytics/ads are actually installed.
+Do not invent AdSense publisher IDs.
+
+Contact:
+`filefitpro.official@gmail.com`
+
+Do not create a fake backend contact form.
+
+Create reusable `AdSlot` component for future AdSense integration. Do not display fake ads. Ad locations must never obstruct tools, uploads, downloads or navigation.
+
+Keep the site trustworthy and content-focused rather than ad-heavy.
+
+## COMPONENT STRUCTURE
+
+Create reusable components:
+
+* Header
+* Footer
+* ToolCard
+* ToolLayout
+* Breadcrumbs
+* FAQ
+* PrivacyBadge
+* AdSlot
+* DownloadButton
+
+## PERFORMANCE
+
+Optimize for mobile and Core Web Vitals.
+Use client components only where browser APIs are required.
+Lazy/dynamically load heavy PDF functionality.
+Avoid unnecessary dependencies.
+Clean up object URLs and large Canvas/image memory.
+Avoid layout shift.
+
+## ACCESSIBILITY + SECURITY
+
+Keyboard accessible, semantic labels, visible focus, good contrast, touch-friendly mobile controls.
+
+Validate file MIME/type, extension, size and dimensions.
+Never execute uploaded files.
+Handle corrupted/unsupported/oversized files and Canvas/PDF/download failures.
+Revoke object URLs.
+
+Create:
+`src/app/loading.js`
+`src/app/error.js`
+`src/app/not-found.js`
+
+## FOOTER
+
+FileFit Pro | Tools | Blog | About | Contact | Privacy | Terms | Disclaimer | Methodology
+© 2026 FileFit Pro
+
+## FINAL QUALITY CHECK
+
+Before finishing, verify the project builds and runs correctly.
+No TODOs, fake buttons, broken imports, broken links or obvious console errors.
+Test all four tools, downloads, PDF generation, responsive layouts and navigation.
+
+Do not add backend/API/database.
+Do not add extra tools.
+Do not generate unnecessary documentation.
+Do not explain the implementation.
+Build the complete runnable project now.
