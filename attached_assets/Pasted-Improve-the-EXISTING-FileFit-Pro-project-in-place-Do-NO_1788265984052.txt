@@ -1,0 +1,214 @@
+Improve the **EXISTING FileFit Pro project in-place**. Do NOT rebuild, regenerate, or replace the application. Preserve all currently working functionality and existing architecture.
+
+Goal: make the existing website feel like a **premium, polished commercial SaaS product**, while keeping the code lightweight and minimizing AI usage.
+
+## 1. PREMIUM UI/UX
+
+Refine the existing UI across all pages using the current FileFit Pro identity:
+
+* dark slate `#080c14`
+* cyan `#06b6d4`
+* subtle glass surfaces and glow
+* modern typography
+* clean Lucide icons
+* sophisticated spacing and hierarchy
+* polished borders/shadows
+* professional hover/focus/active states
+* excellent mobile responsiveness
+* accessible contrast and keyboard navigation
+
+Do NOT add excessive animations, gradients, neon effects, huge empty spaces, or unnecessary components.
+
+Make it look like a serious premium SaaS/product, not a generic AI-generated template.
+
+## 2. HOMEPAGE UX
+
+Improve the existing homepage without changing its SEO purpose.
+
+Ensure the page has a strong visual hierarchy:
+Hero → privacy/trust value → featured tools → how it works → privacy explanation → guides/blog → FAQ → related tools → CTA.
+
+Make the primary actions obvious.
+
+Tool cards should look premium and clearly communicate:
+
+* what the tool does
+* supported formats
+* privacy/browser processing
+* CTA
+
+Do not make the homepage a thin tool-only page.
+
+## 3. TOOL EXPERIENCE
+
+Polish all existing tools without changing their core logic.
+
+For every tool improve:
+
+* upload/dropzone
+* empty state
+* selected-file state
+* processing state
+* success state
+* error state
+* preview
+* controls
+* result section
+* download CTA
+* privacy badge
+
+Make the workflow extremely clear and reduce unnecessary clicks.
+
+### Image Compressor
+
+Make target KB, presets, original/output comparison and download especially clear.
+
+### Passport Photo
+
+Make 35×45mm, DPI, pixel dimensions, crop/fit and export options easy to understand.
+
+### CNIC/ID Merger
+
+Make front/back uploads, A4 orientation, layout, spacing and export controls visually organized.
+
+### Metadata Remover
+
+Clearly communicate the clean-export workflow and result.
+
+Do not break or rewrite working Canvas/PDF processing logic unnecessarily.
+
+## 4. BLOG
+
+Improve the existing blog into a professional editorial section.
+
+Keep the current lightweight data-driven architecture.
+
+Improve:
+
+* blog listing layout
+* featured article treatment
+* article cards
+* typography
+* metadata
+* reading time
+* categories where useful
+* article spacing/readability
+* related articles
+* related tool CTA
+* breadcrumbs
+* mobile reading experience
+
+Keep the existing 5 starter articles, but improve their formatting and usefulness where needed.
+
+Each article should have:
+
+* clear search-intent-focused title
+* short useful introduction
+* descriptive H2/H3 sections
+* practical steps
+* relevant FileFit Pro tool link
+* related article links
+* concise FAQ when useful
+* proper BlogPosting JSON-LD
+* unique metadata/canonical
+
+Do not generate dozens of new articles.
+
+Make future articles easy to add through the existing data structure.
+
+## 5. TRUST / ADSENSE READINESS
+
+Polish the existing About, Contact, Privacy, Terms, Disclaimer and Methodology pages visually and structurally.
+
+Ensure they are easy to navigate and read.
+
+Keep privacy claims accurate:
+files are processed locally and are not uploaded to FileFit Pro servers.
+
+Do not add fake testimonials, reviews, ratings, statistics, authors, companies, analytics vendors or AdSense IDs.
+
+Keep the existing AdSlot component but do not add fake advertisements.
+
+## 6. NAVIGATION
+
+Improve Header and Footer.
+
+Header:
+
+* strong FileFit Pro branding
+* Tools navigation
+* Blog
+* About
+* Contact
+* clear CTA
+* polished mobile menu
+
+Footer:
+Tools
+Blog
+About
+Contact
+Privacy
+Terms
+Disclaimer
+Methodology
+
+Ensure every link works.
+
+## 7. SEO PRESERVATION
+
+Do not remove or weaken existing SEO.
+
+Verify and preserve:
+
+* unique metadata
+* canonical URLs
+* metadataBase
+* sitemap
+* robots
+* OpenGraph
+* Twitter metadata
+* semantic H1/H2 structure
+* BreadcrumbList JSON-LD
+* WebSite/Organization schema
+* appropriate SoftwareApplication schema
+* BlogPosting schema
+* internal links
+
+Fix only obvious SEO issues found.
+
+No keyword stuffing or duplicate pages.
+
+## 8. PERFORMANCE
+
+Keep the implementation lightweight.
+
+Avoid unnecessary packages and client components.
+Preserve dynamic loading for heavy PDF functionality.
+Avoid unnecessary JavaScript and animations.
+Clean up object URLs and browser memory.
+
+## 9. FINAL QA
+
+After changes:
+
+* run the project/build
+* fix broken imports
+* fix broken links
+* fix console errors
+* verify all four tools still work
+* verify downloads
+* verify PDF export
+* verify mobile layout
+* verify navigation
+* verify blog routes
+* verify legal pages
+* verify sitemap/robots
+
+IMPORTANT:
+Modify the existing project in-place.
+Do not rebuild from scratch.
+Do not add extra tools.
+Do not add unnecessary features.
+Do not generate documentation.
+Prioritize visible UX improvements and functional correctness while using the minimum necessary code/tokens.
